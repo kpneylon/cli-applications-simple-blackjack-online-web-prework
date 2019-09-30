@@ -30,8 +30,16 @@ def initial_round
   return card_total
 end
 
-def hit?
-  # code hit? here
+def hit?(card_total)
+  prompt_user 
+  user_input = get_user_input #set a variable to use for your if/else statement
+  if user_input == "h"
+    card_total += deal_card 
+  elsif user_input == "s"
+    card_total
+  else
+    invalid_command
+  end
 end
 
 def invalid_command
