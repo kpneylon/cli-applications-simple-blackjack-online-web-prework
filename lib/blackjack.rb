@@ -24,6 +24,7 @@ end
 
 def initial_round
   deal_card + deal_card
+  di
 end
 
 def hit?(card_total)
